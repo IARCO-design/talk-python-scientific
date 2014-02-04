@@ -1,9 +1,9 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: 'Python for Scientific Computation',
+    title: 'Scientific Computing with Python',
     subtitle: '',
-    eventTitle: 'Seminar talk',
+    eventTitle: 'Cosse workshop 2014, Potsdam',
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
     enableSlideAreas: true, // Default: true. False turns off the click areas on either slide of the slides.
@@ -25,13 +25,11 @@ var SLIDE_CONFIG = {
     twitter: '@nschloe',
     //www: 'http://www.you.com',
     github: 'http://github.com/nschloe'
-  }/*, {
-    name: 'Second Name',
-    company: 'Job Title, Google',
-    gplus: 'http://plus.google.com/1234567890',
-    twitter: '@yourhandle',
-    www: 'http://www.you.com',
-    github: 'http://github.com/you'
-  }*/]
+  }, {
+    name: 'André Gaul',
+    company: 'Researcher, Matheon',
+    twitter: '@andrenarchy',
+    github: 'http://github.com/andrenarchy'
+  }]
 };
 

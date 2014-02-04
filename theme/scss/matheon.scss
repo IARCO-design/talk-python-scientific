@@ -9,10 +9,28 @@ $matheon-blue: rgb(38,89,166);
 // 0b2268
 $matheon-blue-secondary2: #015cc8;
 
+blockquote {
+    margin-left: 2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: smaller;
+    font-style: italic;
+}
+
+.screenshot {
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.blackhover {
+    //padding-left: 1em;
+    //background: rgba(0, 0, 0, 0.55);
+    text-shadow: 0px 0px 9px rgba(0, 0, 0, 1);
+}
+
 slides > slide {
 
   font-family: 'UniversLTStd', 'Open Sans', Arial, sans-serif;
-:wq
   &:not(.nobackground) {
     &:before {
       content: $social-tags;
@@ -23,7 +41,7 @@ slides > slide {
   &.title-slide {
     &:after {
       // TODO Actually, the logo of the conference is supposed to go here.
-      background: url(../../images/tu-logo-red.svg) no-repeat 100% 50%;
+      background: url(../../images/pytub.svg) no-repeat 100% 50%;
       @include background-size(contain);
     }
   }

@@ -102,7 +102,6 @@ URL: https://code.google.com/p/io-2013-slides
             <li>What is Python?</li>
             <ul>
             <li>Some general facts about Python</li>
-            <li>Programming 101</li>
             <li>Selected packages for scientific computation:<br/>
               NumPy, SciPy, matplotlib, SymPy, FEniCS/DOLFIN
             </li>
@@ -120,31 +119,22 @@ URL: https://code.google.com/p/io-2013-slides
           <ul>
             <li>free software</li>
             <li>universal programming language</li>
-            <li>many packages existing</li>
+            <li>many packages</li>
             <li>easily extendable</li>
           </ul>
-          <p>Python is (line many script languages) very intuitive.</p>
+          <p>Python is (like many script languages) very intuitive.</p>
           <ul>
-            <li>no explicit type specifications (<a href="https://de.wikipedia.org/wiki/Duck-Typing">duck typing</a>)</li>
+            <li>no explicit type specifications (<a href="https://en.wikipedia.org/wiki/Duck_typing">duck typing</a>)</li>
             <li>code blocks must be indented (leads to improved readability)</li>
-            <li>Very high-quality code.<br/>
-      0.005 defects per thousand lines of code:<br/>
-      "The open-source Python programming language [...] now surpasses that of
+            <li>Language core: very high-quality code (0.005 defects per thousand lines of code!)<br/>
+      <q style="font-size: smaller; line-height: 1em;">
+      The open-source Python programming language [...] now surpasses that of
 its open-source and proprietary peers, according to a study published by
-development testing vendor Coverity." -- Sean M. Kerner, eweek.com
+development testing vendor Coverity.</q>
+        <div class="author">Sean M. Kerner, eweek.com</div>
 </li>
           </ul>
         </article>
-    </slide>
-
-    <slide>
-      <hgroup>
-        <h2>The Python language: Popularity</h2>
-      </hgroup>
-      <article class="flexbox vcenter">
-        <img src="images/tpci_trends.png" alt="Description" title="Description" width=700px>
-        <footer class="source">source: http://www.tiobe.com/</footer>
-      </article>
     </slide>
 
     <slide>
@@ -153,9 +143,12 @@ development testing vendor Coverity." -- Sean M. Kerner, eweek.com
       </hgroup>
       <article>
       <ul>
+      <li><strong>Free and open source software!</strong></li>
       <li>Holistic Language Design<br/>
-      "Doing mathematical programming in a general-purpose language is
-easier than doing general-purpose programming in a mathematical language."
+<blockquote>
+      Doing mathematical programming in a general-purpose language is
+easier than doing general-purpose programming in a mathematical language.
+</blockquote>
       </li>
       <li>Readability</li>
       <li>Balance of High Level and Low Level Programming</li>
@@ -167,13 +160,8 @@ easier than doing general-purpose programming in a mathematical language."
       <li>Testing Framework</li>
       <li>Large user base</li>
       </ul>
-      Possible downsides?
-      <ul>
-      <li>Not as popular as, e.g., MATLAB(r)<br/>
-      <li>...<br/>
-      </ul>
       </article>
-        <footer class="source">http://www.stat.washington.edu/~hoytak/blog/whypython.html</footer>
+        <footer class="source">Source: <a href="http://www.stat.washington.edu/~hoytak/blog/whypython.html">10 Reasons Python Rocks for Research (And a Few Reasons it Doesn’t)</a></footer>
     </slide>
 
     <slide>
@@ -227,6 +215,56 @@ V, H = arnoldi(A, v, ortho='house') # maxiter is set to default (10)
 </pre>
       </article>
     </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/spaceshuttle.jpg)">
+      <hgroup class="white">
+        <h2 class="white">Now go ahead an do rocket science!</h2>
+      </hgroup>
+    <article class="flexbox vleft auto-fadein">
+    </article>
+  </slide>
+
+  <slide>
+      <hgroup class="white">
+        <h2>Jimmy says</h2>
+      </hgroup>
+    <article class="flexbox vleft auto-fadein">
+      <p>
+      <img src="images/jimmy.png" style="float: right; width: 200px;">
+      <q>Do it yourself!</q><br/>
+      <q>I want control over everything!</q><br/>
+      <q>You cannot trust 3rd party software!</q><br/>
+      <q>That's how we've always done it!</q>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Do it yourself: Reality</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img src="images/makeshiftcar.jpg" height="450px" alt="Description" title="Description">
+      <p style="text-align: center">Jimmy on his way to Mars</p>
+      <footer class="source">source: rofl.to</footer>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground" style="background-image: url(images/bull.jpg)">
+      <hgroup>
+        <h2 class="white">Quo vadis, scientific software?</h2>
+      </hgroup>
+    <article class="flexbox vleft auto-fadein">
+        <div class="white">
+        <q>We should no longer encourage or even allow our graduate students to
+        write their programs from scratch; rather, they should build on what's
+        already there.</q>
+        </div>
+        <div class="author white blackhover">
+        Wolfgang Bangerth and Timo Heister
+        </div>
+        <footer class="source"><a href="http://www.siam.org/news/news.php?id=2131">Quo vadis, scientific software - SIAM news January 2014</a></footer>
+    </article>
+  </slide>
 
   <slide class="fill nobackground" style="background-image: url(images/package.jpg)">
     <h2 class="white">Packages (modules, add-ons,...) </h2>
@@ -375,15 +413,27 @@ diff(f, x, 2)
 
     <slide>
       <hgroup>
-        <h2>Packages: Miscellaneous</h2>
+        <h2>Packages: Miscellaneous 1/2</h2>
       </hgroup>
       <article>
         <ul>
-          <li><a href="https://github.com/andrenarchy/krypy">krypy</a> (by André Gaul, TU Berlin) - Krylov subspace methods &amp; tools</li>
-    <img src="images/minres.png" width="300px">
-          <li><a href="https://code.google.com/p/pyamg/">pyamg</a> - algebraic multigrid</li>
-    <img src="images/rootnode_aggregation.png"  width="200px">
-          <li>...</li>
+          <li><a href="https://github.com/andrenarchy/krypy">krypy</a> (by André Gaul, TU Berlin) - Krylov subspace methods &amp; tools
+    <p class="screenshot"><img src="images/minres.png" width="300px"></p></li>
+          <li><a href="https://code.google.com/p/pyamg/">pyamg</a> - algebraic multigrid
+    <p class="screenshot"><img src="images/rootnode_aggregation.png"  width="200px"></p></li>
+        </ul>
+      </article>
+    </slide>
+
+    <slide>
+      <hgroup>
+        <h2>Packages: Miscellaneous 2/2</h2>
+      </hgroup>
+      <article>
+        <ul>
+          <li><a href="http://vtk.org/">VTK</a> - 3d visualization
+        <p class="screenshot"><img src="images/vtk.png"  width="200px"></p>
+</li>
         </ul>
       </article>
     </slide>
@@ -448,20 +498,10 @@ diff(f, x, 2)
 
   <slide>
     <hgroup>
-      <h2>Common misconceptions (234): Do it yourself</h2>
-    </hgroup>
-    <article class="flexbox vcenter">
-      <img src="images/batmobile.jpg" height="500px" alt="Description" title="Description">
-      <footer class="source">source: wikia.nocookie.net</footer>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
       <h2>Writing your own FEM application</h2>
     </hgroup>
     <article>
-    Compute local stiffness matrix:
+    Jimmy computes the local stiffness matrix:
     <p><pre class="prettyprint" data-lang="matlab">
 J = [ X(NODES(2),1)-X(NODES(1),1) , X(NODES(3),1)-X(NODES(1),1)  ;
       X(NODES(2),2)-X(NODES(1),2) , X(NODES(3),2)-X(NODES(1),2)  ];
@@ -488,7 +528,7 @@ A(3,3) =   L(2,2)                     + AbsDetJ/12 ;
       <h2>Writing your own FEM application (cont'd)</h2>
     </hgroup>
     <article>
-    Insert into global matrix according to Element Connectivity Table:
+    Jimmy inserts into global matrix according to element connectivity table:
     <p><pre class="prettyprint" data-lang="matlab">
 for r=1:size(ECT,1)
   localStiffnessMatrix = local_assemble(ECT(r,:),X,eps);
@@ -510,15 +550,6 @@ end
     </article>
   </slide>
 
-  <slide>
-    <hgroup>
-      <h2>Do it yourself: Reality</h2>
-    </hgroup>
-    <article class="flexbox vcenter">
-      <img src="images/makeshiftcar.jpg" height="500px" alt="Description" title="Description">
-      <footer class="source">source: rofl.to</footer>
-    </article>
-  </slide>
 
   <!--slide>
     <hgroup>
@@ -744,6 +775,23 @@ Rectangle(a, 0, b, 1, nr, nt, 'crossed')
     </pre></p>
     </article>
   </slide>
+
+  <slide>
+    <hgroup>
+      <h2>TODO!!!</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>unit test w/ sympy</li>
+        <li>nose</li>
+        <li>Cython</li>
+        <li>git/hub</li>
+        <li>free your code - licensing (gpl)</li>
+
+      </ul>
+    </article>
+  </slide>
+
 
   <!--slide>
     <hgroup>
