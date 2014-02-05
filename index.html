@@ -221,13 +221,14 @@ V, H = arnoldi(A, v, ortho='house') # maxiter is set to default (10)
         <h2 class="white">Now go ahead an do rocket science!</h2>
       </hgroup>
     <article class="flexbox vleft auto-fadein">
-    <footer class="source">source: <a href="https://en.wikipedia.org/wiki/File:Space_Shuttle_Challenger_(04-04-1983).JPEG">wikipedia</a></footer>
+    <footer class="source">source: <a
+        href="https://en.wikipedia.org/wiki/File:Space_Shuttle_Challenger_(04-04-1983).JPEG">Wikipedia</a></footer>
     </article>
   </slide>
 
   <slide>
       <hgroup class="white">
-        <h2>Jimmy says</h2>
+        <h2>Jimmy says:</h2>
       </hgroup>
     <article class="flexbox vleft auto-fadein">
       <p>
@@ -263,7 +264,8 @@ V, H = arnoldi(A, v, ortho='house') # maxiter is set to default (10)
         already there.</q>
         </div>
         <div class="author white blackhover">
-        Wolfgang Bangerth and Timo Heister
+          Wolfgang Bangerth<br>
+          Timo Heister
         </div>
         <footer class="source">
           <p>source quote: <a href="http://www.siam.org/news/news.php?id=2131">Quo vadis, scientific software - SIAM news January 2014</a></p>
@@ -274,7 +276,8 @@ V, H = arnoldi(A, v, ortho='house') # maxiter is set to default (10)
 
   <slide class="fill nobackground" style="background-image: url(images/package.jpg)">
     <h2 class="white">Packages (modules, add-ons,...) </h2>
-    <footer class="source">source: flickr.com/photos/halfbisqued/</footer>
+    <footer class="source">source: <a
+        href="http://www.flickr.com/photos/halfbisqued/">flickr.com/photos/halfbisqued/</a></footer>
   </slide>
 
     <slide>
@@ -414,7 +417,7 @@ diff(f, x, 2)
       </ul>
       </article>
       <aside class="gdbar right bottom"><img src="images/ipython_logo.png"></aside>
-    <footer class="source">source: ipython.org</footer>
+      <footer class="source">source: <a href="http://ipython.org">ipython.org</a></footer>
     </slide>
 
     <slide>
@@ -450,7 +453,8 @@ diff(f, x, 2)
     <h2>Numerical PDE solving with</h2><br/><br/>
     <img src="images/fenics.png" width="600px">
     </article>
-    <footer class="source">source: fenics-project.org</footer>
+    <footer class="source">source: <a
+    href="http://fenicsproject.org">fenicsproject.org</a></footer>
   </slide>
 
   <slide>
@@ -484,27 +488,15 @@ diff(f, x, 2)
     \sum_j \alpha_j \int_{\Omega} \nabla u_j \cdot \nabla v_i - \int_{\partial\Omega} (\n\cdot\nabla u_j) v_i= \int_{\Omega} f v_i \quad \forall v_i\in V^{(h)}.
     \]
       <img src="images/ddg_hat_function.svg" alt="Description" title="Description">
-      <footer class="source">source: http://brickisland.net/cs177/wp-content/uploads/2011/11/ddg_hat_function.svg</footer>
-    </article>
-  </slide>
-
-
-  <!--slide class="segue dark quote nobackground"-->
-  <slide class="fill nobackground" style="background-image: url(images/bjarne.jpg)">
-    <article class="flexbox vleft auto-fadein">
-      <q class="white">
-        Always stay as high-level as possible.
-      </q>
-      <div class="author white">
-        Bjarne Stroustrup<br>
-        Designer of C++
-      </div>
+      <footer class="source">source: <a
+          href="http://brickisland.net/cs177/wp-content/uploads/2011/11/ddg_hat_function.svg">http://brickisland.net/cs177/wp-content/uploads/2011/11/ddg_hat_function.svg</a>
+        </footer>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Writing your own FEM application</h2>
+      <h2>Jimmy writes his first FEM application</h2>
     </hgroup>
     <article>
     Jimmy computes the local stiffness matrix:
@@ -527,11 +519,12 @@ A(3,2) =   L(1,2)                     + AbsDetJ/12 ;
 A(3,3) =   L(2,2)                     + AbsDetJ/12 ;
     </pre></p>
     </article>
+    <aside class="gdbar right bottom"><img src="images/jimmy-head.png"></aside>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Writing your own FEM application (cont'd)</h2>
+      <h2>Jimmy writes his first FEM application (cont'd)</h2>
     </hgroup>
     <article>
     Jimmy inserts into global matrix according to element connectivity table:
@@ -553,6 +546,21 @@ end
     <li>boundary conditions</li>
     <li>...</li>
     </ul>
+    </article>
+    <aside class="gdbar right bottom"><img src="images/jimmy-head.png"></aside>
+  </slide>
+
+
+  <!--slide class="segue dark quote nobackground"-->
+  <slide class="fill nobackground" style="background-image: url(images/bjarne.jpg)">
+    <article class="flexbox vleft auto-fadein">
+      <q class="white">
+        Always stay as high-level as possible.
+      </q>
+      <div class="author white">
+        Bjarne Stroustrup<br>
+        Designer of C++
+      </div>
     </article>
   </slide>
 
@@ -730,7 +738,8 @@ UnitCube(4, 4, 4)
 Rectangle(a, 0, b, 1, nr, nt, 'crossed')
 [...]
     </pre></p>
-     <footer class="source">image source: http://geuz.org/gmsh/</footer>
+    <footer class="source">image source: <a
+    href="http://geuz.org/gmsh/">geuz.org/gmsh/</a></footer>
     </article>
   </slide>
 
@@ -784,16 +793,22 @@ Rectangle(a, 0, b, 1, nr, nt, 'crossed')
 
   <slide>
     <hgroup>
-      <h2>TODO!!!</h2>
+      <h2>Some general hints</h2>
     </hgroup>
     <article>
       <ul>
-        <li>unit test w/ sympy</li>
-        <li>nose</li>
-        <li>Cython</li>
-        <li>git/hub</li>
-        <li>free your code - licensing (gpl)</li>
-
+        <li>Use version control (e.g., <a
+          href="http://en.wikipedia.org/wiki/Git_(software)">Git</a>).</li>
+        <li>Publish your code (e.g., on <a href="http://github.com">GitHub</a>
+        or <a href="http://bitbucket.org">Bitbucket</a>).</li>
+        <li>Put a license on your code. (Check out <a
+          href="http://choosealicense.com/">choosealicense.com</a></li>
+        <li>Write <a
+        href="http://en.wikipedia.org/wiki/Unit_testing">unit</a>/capability
+      tests! (Check out <a
+        href="https://nose.readthedocs.org/en/latest/">Nose</a>.)</li>
+        <!--li>unit test w/ sympy</li-->
+        <!--li>Cython</li-->
       </ul>
     </article>
   </slide>
@@ -815,6 +830,8 @@ Rectangle(a, 0, b, 1, nr, nt, 'crossed')
     <slide class="thank-you-slide segue nobackground">
         <aside class="gdbar right"><img src="images/matheon-logo-color.svg"></aside>
         <article class="flexbox vleft auto-fadein">
+            <!--h2>Thank you!</h2-->
+            <p><h4>Always remember: Don't be a Jimmy.</h4></p>
             <h2>Thank you!</h2>
             <p>Questions?</p>
         </article>
