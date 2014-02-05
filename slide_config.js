@@ -18,18 +18,21 @@ var SLIDE_CONFIG = {
   },
 
   // Author information
-  presenters: [{
+  presenters: [
+  {
+    name: 'André Gaul',
+    company: 'Researcher, Matheon',
+    twitter: '@andrenarchy',
+    github: 'http://github.com/andrenarchy'
+  },
+  {
     name: 'Nico Schlömer',
     company: 'Researcher, Matheon',
     gplus: 'https://plus.google.com/110475963061639463862',
     twitter: '@nschloe',
     //www: 'http://www.you.com',
     github: 'http://github.com/nschloe'
-  }, {
-    name: 'André Gaul',
-    company: 'Researcher, Matheon',
-    twitter: '@andrenarchy',
-    github: 'http://github.com/andrenarchy'
-  }]
+  }
+  ]
 };
 
